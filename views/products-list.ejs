@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" />		
+		<title>Verizon - Products</title>
+	</head>
+	<body class="container">
+		<h1>All Products..<small>(Select to continue..)</small></h1>
+		<div class="panel panel-success">
+		<h4 class="panel-heading"><img src="images/verizon.jpg" width="75"></h4>
+		<div class="panel-body">
+			<ul class="list-group">
+				<% AllProducts.forEach(function(P) { %>
+					<li class="col-sm-5 list-group-item">
+						<%- include('product-row', { Product : P, showLink : true }) %>				
+					</li>
+				<% }) %>
+			</ul>
+		</div>
+		<div class="panel-footer">
+			<strong>&copy; All rights reserved by Verizon.</strong>
+		</div>
+		</div>		
+	</body>
+</html>

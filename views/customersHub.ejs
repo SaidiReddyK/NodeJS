@@ -1,0 +1,23 @@
+
+<html>
+	<head>
+		<!-- lib includes -->
+		<link rel="stylesheet" href="styles/bootstrap.min.css" />		
+		<script src="lib/angular/angular.min.js"></script>
+		<script src="lib/angular-route/angular-route.min.js"></script>
+		<!-- App includes -->
+		<script type="text/javascript" src="app/js/customersMod.js"></script>
+		<title>Customers Home</title>
+	</head>
+	
+	<body class="container">
+		<h2>VERIZON - IN</h2>
+		<div class="panel panel-danger">
+			<h3 class="panel-heading">Customers Hub</h3>
+			<div class="panel-body" ng-app="customersMod">
+				<img src="images/verizon.jpg" width="150" />
+				<section class="panel panel-success" ng-view></section>
+			</div>
+		</div>		
+	</body>
+</html>

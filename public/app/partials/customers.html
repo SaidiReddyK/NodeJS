@@ -1,0 +1,21 @@
+
+<article class="panel">
+	<h3>All Customers...</h3>
+	<hr>
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="c in customers">
+			<h4>{{ c.FullName }}</h4>
+			<p>
+				Mail Me - {{ c.Email }} or Call Me &#9742; {{ c.Mobile }}
+			</p>
+			<div class="well">
+				{{ c.About }}
+				<span>
+					<a href="#">&#9733;</a>
+					<a href="#">&#9749;</a>
+					<a href="#">&#9787;</a>
+				</span>
+			</div>
+		</li>
+	</ul>
+</article>

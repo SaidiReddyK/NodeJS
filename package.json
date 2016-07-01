@@ -1,0 +1,24 @@
+
+{
+	"name" : "mean_app",
+	"version" : "1.0.0",
+	"scripts" : {
+		"test" : "echo \"This is my first MEAN app..\" && exit 0",
+		"start" : "node ./server"
+	},
+	"description" : "My First MEAN application",
+	"dependencies" : {
+		"express" : "*",
+		"ejs" : "*",
+		"morgan" : "*",
+		"compression" : "*",
+		"body-parser" : "*",
+		"method-override" : "*",
+		"serve-static" : "latest",
+		"express-session" : "^1.13.0",
+		"mongoose" : "latest",
+		"mysql" : "^2.*"
+	}, 
+	"author" : "Verizon",
+	"license" : "ISC"
+}

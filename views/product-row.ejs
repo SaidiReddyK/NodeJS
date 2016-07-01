@@ -1,0 +1,26 @@
+
+
+<div class="col-sm-3">	
+	<img src="/images/<%= Product.Image %>" width="120" class="image-thumbnail"/>
+</div>
+<div class="col-sm-6">
+	<h4><%= Product.Name %></h4>
+	<strong>&#8377;<%= Product.Price %></strong>
+	<small><%= Product.Description %></small>
+	<% if(showLink) { %>
+		<a class="btn btn-default btn-sm" href="product/<%= Product.ID %>">more...</a>
+	<% } else { %>
+		<blockquote>
+			<strong>Reviews....</strong>
+			<p>
+				<ul class="list-group">
+				<% Product.Reviews.forEach(function(R) { %>
+					<li class="list-group-item">
+					<span class="badge"><%= R.Rating %></span>
+					<%= R.Comments %>&mdash; <%= R.By %></li>
+				<% }) %>
+				</ul>
+			</p>
+		</blockquote>
+	<% } %>	
+</div>

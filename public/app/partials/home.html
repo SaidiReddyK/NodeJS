@@ -1,0 +1,12 @@
+
+<article class="panel panel-body panel-danger">
+	<form class="" name="loginForm">
+		<div class="form-group">
+			<input type="email" name="email" ng-bind="Credentials.Email" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<input type="password" name="pwd" ng-bind="Credentials.Password" class="form-control" required>
+		</div>
+		<button type="submit" ng-disabled="loginForm.$invalid">Login</button>
+	</form>	
+</article>

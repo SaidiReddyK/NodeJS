@@ -1,0 +1,9 @@
+{
+  "name": "mean app",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "*",
+    "bootstrap": "*",
+    "angular-route": "^1.5.7"
+  }
+}
